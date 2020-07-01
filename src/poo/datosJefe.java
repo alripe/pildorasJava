@@ -7,16 +7,16 @@ public class datosJefe extends datosEmpleado {
     public datosJefe(String nombreEmp, double sueldoEmp, int agnoEmp, int mesEmp, int diaEmp) {
         super(nombreEmp, sueldoEmp, agnoEmp, mesEmp, diaEmp);
     }
-    public void ingreseBono(double bono){
+    public void ingreseBono(double bono){ //SETTER
         bonoExtra=bono;
     }
 
-    public double mostrarBono(){
+    public double mostrarBono(){ //GETTER
         return bonoExtra;
     }
 
     @Override
-    public double obtenerSueldo() {
+    public double obtenerSueldo() {//GETTER
         double sueldoJefes = super.obtenerSueldo();
         return sueldoJefes + bonoExtra;
     }
