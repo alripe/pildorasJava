@@ -44,7 +44,7 @@ class datosEmpleado extends datosPersona {
 
     @Override
     public String dameDescripcion() {
-        return "El sueldo del empleado es" + obtenerSueldo() + " con Id  " + Id;
+        return "El sueldo del empleado es " + obtenerSueldo() + " con Id  " + Id;
     }
 
 

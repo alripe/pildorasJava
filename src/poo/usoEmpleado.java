@@ -1,6 +1,7 @@
 
 package poo;
 
+import java.sql.SQLOutput;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -57,12 +58,12 @@ public class usoEmpleado {
         //misEmpleados[4] =jefeOPS;
 
         misEmpleados[4]=new datosJefe
-                ("Pepe", 10000,2010,9,22);*/
+                ("Pepe", 10000,2010,9,22);
 
 
 
 
-        /*for(int i = 0; i<misEmpleados.length;i++){
+        for(int i = 0; i<misEmpleados.length;i++){
             misEmpleados[i].subeSueldo(5);
         }
         for (int i = 0; i<misEmpleados.length;i++){
@@ -71,8 +72,8 @@ public class usoEmpleado {
                     "\nLa fecha de alta del contrato es: "+misEmpleados[i].obtenerAltaContrato());
             System.out.println();
 
-        }*/
-        /*System.out.println("El nombre del empleado es: "+jefeOPS.obtenerNombre()+
+        }
+        System.out.println("El nombre del empleado es: "+jefeOPS.obtenerNombre()+
                 "\nSu sueldo es: "+jefeOPS.obtenerSueldo2()+
                 "\nLa fecha de alta del contrato es: "+jefeOPS.obtenerAltaContrato());*/
 
@@ -87,6 +88,18 @@ public class usoEmpleado {
                 "\nSu sueldo es: "+jefe1.obtenerSueldo()+
                 "\nLa fecha de alta del contrato es: "+jefe1.obtenerAltaContrato());
         //System.out.println("El  bono es de " + jefe1.mostrarBono());*/
+
+        //---------------------------------------------------------------------------cuarto ejemplo
+
+        datosPersona[] datosPersonas = new datosPersona[2];
+
+        datosPersonas[0] =new datosAlumno("AlejandroRivera", "Informatica");
+        datosPersonas[1]= new datosEmpleado("Alefredo", 50000.0, 2000,12,22);
+
+        for(datosPersona p: datosPersonas){
+
+            System.out.println(p.dameNombre() + " , " + p.dameDescripcion());
+        }
 
         } //fin del metodo main
 } //fin de la clase Empleados
