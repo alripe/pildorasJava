@@ -1,38 +1,38 @@
 package poo;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-class datosEmpleado {
+class datosEmpleado extends datosPersona {
 
-    private String nombre;
+    //private String nombre;
     private double sueldo;
     private Date altaContrato;
+    private static int IdSiguiente;
+    private int Id;
 
-    //metodo Constructor con parametros ----------------------------------------------------------1
-    public datosEmpleado(String nombreEmp, double sueldoEmp, int agnoEmp, int mesEmp, int diaEmp){
 
-        nombre=nombreEmp;
+    //metodo Constructor con parametros
+    public datosEmpleado(String nombre, double sueldoEmp, int agnoEmp, int mesEmp, int diaEmp){
+        super(nombre);
+
         sueldo=sueldoEmp;
 
         GregorianCalendar calendario = new GregorianCalendar(agnoEmp, mesEmp, diaEmp);
         altaContrato=calendario.getTime();
-    }
-    //metodo sobrecarga  regresa solo nombre -----------------------------------------------------2
-    public datosEmpleado(String nombreEmp){
 
-        this(nombreEmp, 25000, 2010, 1, 20);
-
+        ++IdSiguiente;
+        Id=IdSiguiente;
     }
-    //---------------------------------------------------------------------------------------------
-    public String obtenerNombre() {//GETTER
 
-        return nombre;
-    }
     public double obtenerSueldo() {//GETTER
 
         return sueldo;
     }
+
     public Date obtenerAltaContrato() {//GETTER
 
         return altaContrato;
@@ -42,4 +42,11 @@ class datosEmpleado {
         sueldo +=aumento;
     }
 
-}//fin de la clase datosEmpleado-------------------------------------------------------------------
+    @Override
+    public String dameDescripcion() {
+        return "El sueldo del empleado es" + obtenerSueldo() + " con Id  " + Id;
+    }
+
+
+}//fin de la clase datosEmpleado
+

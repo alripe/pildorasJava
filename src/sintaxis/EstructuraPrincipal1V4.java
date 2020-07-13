@@ -1,3 +1,4 @@
+package sintaxis;
 
 public class EstructuraPrincipal1V4 {
 	

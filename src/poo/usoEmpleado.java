@@ -41,7 +41,9 @@ public class usoEmpleado {
 
 
         //---------------------------------------------------------------------------segundo ejemplo
-
+        /*datosJefe jefeOPS = new datosJefe("Alejandro", 30000,2019,10,31);
+        jefeOPS.ingreseBono(10000);
+        //jefeOPS.obtenerSueldo2();
         datosEmpleado[] misEmpleados = new datosEmpleado[5];
 
         misEmpleados[0] = new datosEmpleado
@@ -52,11 +54,15 @@ public class usoEmpleado {
                 ("Roberto", 16000, 2000, 6, 13);
         misEmpleados[3] = new datosEmpleado
                 ("Dominique");
-        misEmpleados[4] = new datosJefe
-                ("roberta", 35000,2019,10,30);
+        //misEmpleados[4] =jefeOPS;
+
+        misEmpleados[4]=new datosJefe
+                ("Pepe", 10000,2010,9,22);*/
 
 
-        for(int i = 0; i<misEmpleados.length;i++){
+
+
+        /*for(int i = 0; i<misEmpleados.length;i++){
             misEmpleados[i].subeSueldo(5);
         }
         for (int i = 0; i<misEmpleados.length;i++){
@@ -64,7 +70,11 @@ public class usoEmpleado {
                     "\nSu sueldo es: "+misEmpleados[i].obtenerSueldo()+
                     "\nLa fecha de alta del contrato es: "+misEmpleados[i].obtenerAltaContrato());
             System.out.println();
-        }
+
+        }*/
+        /*System.out.println("El nombre del empleado es: "+jefeOPS.obtenerNombre()+
+                "\nSu sueldo es: "+jefeOPS.obtenerSueldo2()+
+                "\nLa fecha de alta del contrato es: "+jefeOPS.obtenerAltaContrato());*/
 
 
 
@@ -78,8 +88,7 @@ public class usoEmpleado {
                 "\nLa fecha de alta del contrato es: "+jefe1.obtenerAltaContrato());
         //System.out.println("El  bono es de " + jefe1.mostrarBono());*/
 
-
-    } //fin del metodo main
+        } //fin del metodo main
 } //fin de la clase Empleados
 
 
