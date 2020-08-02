@@ -9,7 +9,7 @@ public class datosAlumno extends datosPersona {
         this.carrera=carrera;
     }
 
-    @Override
+    //@Override
     public String dameDescripcion() {
         return "La carrera del alumno es: " + carrera;
     }

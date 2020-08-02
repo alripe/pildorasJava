@@ -84,8 +84,8 @@ public class chasisVehiculo {
             pesoTotal= pesoTotal + 20;
         }
     }
+
     public String muestraPesoCarro() {
         return "El peso del carro es " + pesoTotal;
     }
-
 }
