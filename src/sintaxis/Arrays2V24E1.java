@@ -1,5 +1,6 @@
+package sintaxis;
 
-public class Arrays2V24E1 
+public class Arrays2V24E1
 {
 
 	public static void main(String[] args) 
@@ -17,9 +18,9 @@ public class Arrays2V24E1
 		paises [7] = "Chile";
 
 
-		for (int i = 0; i < paises.length; i++) {
+		for (/*int i = 0; i < paises.length; i++*/String paisesEach:paises) {
 			
-			System.out.println("El pais " + (i+1) + " es " + paises[i]);
+			System.out.println("El pais " + (paisesEach+1) + " es " + paisesEach);
 			
 		}
 		

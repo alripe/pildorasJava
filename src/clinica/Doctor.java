@@ -3,6 +3,7 @@ package clinica;
 public class Doctor {
     
     public Doctor(){
+
     }
     
    public Doctor(String rut,String nombre, String apellido, int edad, String especialidad, int turno){
@@ -17,7 +18,7 @@ public class Doctor {
     }
    
    
-   public String getRut(){
+   public String getRut() {
        return rut;
    }
    public String getNombre(){
@@ -51,6 +52,7 @@ public class Doctor {
    public void setApellido(String apellido){
        this.apellido = apellido;
    }
+
    public void setEdad(int edad){
        if(edad>=24){
            this.edad = edad;

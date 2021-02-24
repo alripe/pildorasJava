@@ -1,31 +1,33 @@
 package sintaxis;
 
 import java.util.Scanner;
-
+import javax.swing.JOptionPane;
 public class bucles2V19 
 {
 	public static void main(String[] args) {
 		int aleatorio = (int) (Math.random() * 100);
 		System.out.println(aleatorio);
-		Scanner sc = new Scanner(System.in);
-		int intentos = 0;
+		int intento = 0;
 		int numero = 0;
-
+		final int vidas = 5;
 
 			do {
-				intentos++;
-				System.out.println("Ingrese un numero");
-				numero = sc.nextInt();
+				intento++;
+				numero = Integer.parseInt(JOptionPane.showInputDialog("Igresa el numero: "));
 
-				if (aleatorio < numero) {
-					System.out.println("mas bajo");
-
-				} else if (aleatorio > numero) {
-					System.out.println("mas alto");
+				if(aleatorio<numero) {
+					JOptionPane.showMessageDialog(null, "El numero es Bajo");
+				} else if(aleatorio>numero) {
+					JOptionPane.showMessageDialog(null, "El numero es mas alto");
+				} else {
+					JOptionPane.showMessageDialog(null,"perdistes");
 				}
 
-			} while (aleatorio != numero);
-			System.out.println("correcto lo superaste en " + intentos);
+			} while (aleatorio != numero && intento<vidas);
+
+			if(intento<vidas) {
+				JOptionPane.showMessageDialog(null, "correcto, lo superaste en " + intento);
+			}
 	}
 }
 

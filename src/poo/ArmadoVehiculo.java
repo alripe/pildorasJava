@@ -2,13 +2,14 @@ package poo;
 
 import javax.swing.*;
 
-public class Vehiculos {
+public class ArmadoVehiculo {
 
     public static void main(String[] args) {
 
         //objetos----------------------------------------------------------------------------------
         chasisVehiculo coche1 = new chasisVehiculo();
         Furgoneta coche2 = new Furgoneta(150,4);
+        Furgoneta2021 coche2021 = new Furgoneta2021(true);
 
         //chasisCoche
         coche1.estableceColor("rojo");
@@ -20,7 +21,8 @@ public class Vehiculos {
         coche2.tipoAsiento("no");
         coche2.climatizadorCarro("si");
         coche2.PesoCarroTotal();
-
+        //furgoneta---------------------------------------------------------------------------------
+        //coche2021
 
         System.out.println(coche1.dimeCaracteristicas());
         System.out.println(coche1.dimeColor());
@@ -35,6 +37,9 @@ public class Vehiculos {
         System.out.println(coche2.mustraCapacidad());
         System.out.println(coche2.muestraPlazasExtra());
         System.out.println(coche2.muestraPesoCarro());
+
+
+
 
     }
 

@@ -1,6 +1,6 @@
 package poo;
 
-public class Furgoneta extends chasisVehiculo{
+public class Furgoneta extends chasisVehiculo {
 
     private int capacidadCarga;
 
@@ -10,6 +10,9 @@ public class Furgoneta extends chasisVehiculo{
         super();
         this.capacidadCarga=capacidadCarga;
         this.plazasExtra=plazasExtra;
+    }
+
+    public Furgoneta(){
     }
 
     public String  mustraCapacidad(){
